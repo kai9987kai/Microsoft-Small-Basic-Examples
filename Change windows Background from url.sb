@@ -1,18 +1,32 @@
+' Makes the window visible
 GraphicsWindow.Show()
+
+' Changes color for text and shapes in window
 GraphicsWindow.BrushColor = "red"
+
+' BackGroundColor 
 GraphicsWindow.BackgroundColor = "green"
+
+' Window Title
 GraphicsWindow.Title = "Background Changer Small Basic Gui Example"
+
+' Controls window sizing
 GraphicsWindow.Width = (120)
 GraphicsWindow.Height = (95)
+
+' Stops window form being resized
 GraphicsWindow.CanResize = "False"
+
+' Center it on desktop
+GraphicsWindow.Left = Desktop.Width / 2 - GraphicsWindow.Width / 2
+GraphicsWindow.Top = Desktop.Height / 2 - GraphicsWindow.Height / 2
+
+' Button Code
 Shapes.AddText("Change Background")
-
 button[1] = Controls.AddButton("Change BackGround",0,80)
-
-
-
 Controls.ButtonClicked = ShowMessage
 xd = "https://rog.asus.com/media/1554200908315.jpg"
 Sub ShowMessage
+  
   Desktop.SetWallPaper(xd)
 EndSub
