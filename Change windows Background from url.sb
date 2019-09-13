@@ -2,8 +2,9 @@ GraphicsWindow.Show()
 GraphicsWindow.BrushColor = "red"
 GraphicsWindow.BackgroundColor = "green"
 GraphicsWindow.Title = "Background Changer Small Basic Gui Example"
-GraphicsWindow.Width = (130)
-GraphicsWindow.Height = (110)
+GraphicsWindow.Width = (120)
+GraphicsWindow.Height = (95)
+GraphicsWindow.CanResize = "False"
 Shapes.AddText("Change Background")
 
 button[1] = Controls.AddButton("Change BackGround",0,80)
